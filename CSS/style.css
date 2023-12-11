@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(#c165dd, #5c27fe);
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    margin: 20px;
+    width: 50px;
+}
+
+.ichat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: rgb(13, 41, 101);
+}
+
+.container{
+    width: 60vw;
+    height: 70vh;
+    background: linear-gradient(#4adede, #1ca7ec);
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.container::-webkit-scrollbar{
+    display: none;
+}
+
+.message{
+    background-color: lightgray;
+    max-width: 35%;
+    margin: 5px;
+    padding: 7px 10px;
+    border-radius: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.right{
+    align-self: flex-end;
+}
+
+.left{
+    align-self: flex-start;
+}
+
+.center{
+    align-self: center;
+    background: linear-gradient(#2afeb7, #04f5ed);
+    font-size: 0.7rem;
+}
+
+#send-container{
+    width: 60vw;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#messageInp{
+    border: none;
+    outline: none;
+    width: 92%;
+    height: 2rem;
+    padding: 5px 15px;
+    border-radius: 50px;
+    background: linear-gradient(to right, #b2f7ef, #ffcbdb);
+    resize: none;
+    overflow-y: scroll;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#messageInp::-webkit-scrollbar{
+    display: none;
+}
+
+.btn{
+    width: 7.5%;
+    height: 2rem;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(#2afeb7, #04f5ed);
+    cursor: pointer;
+    font-size: 1rem;
+}
